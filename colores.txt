@@ -1,0 +1,11 @@
+iconos
+celular:204F63
+tv:307A56
+fono:A37D47
+wifi:95463F
+
+Tabs
+azul:4498EF
+verde:44C793
+naranjo:F7B84E
+rojo:F1745B

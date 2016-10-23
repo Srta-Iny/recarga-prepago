@@ -1,0 +1,23 @@
+body{
+	background-image: url(../img/bg-site.jpg);
+	background-size: contain;
+	font-family: "Ubuntu", sans-serif;
+	color: #fff;
+}
+.container{
+	width: 80%;
+}
+/*header*/
+.menu{
+	background-color: #607D8B;
+    border-radius: 20px;
+    padding: 2%;
+    margin-top: 5%;
+}
+.logo-recarga{
+	margin: 5% auto;
+    width: 55%;
+}
+.logo-recarga~h2{
+	margin:4% 0;
+}
