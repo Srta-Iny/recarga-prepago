@@ -1,6 +1,7 @@
 body{
 	background-image: url(../img/bg-site.jpg);
-	background-size: contain;
+	background-repeat: no-repeat;
+	background-size: cover;
 	font-family: "Ubuntu", sans-serif;
 	color: #fff;
 }
