@@ -1,10 +1,12 @@
 
 /*formulario recarga*/
-h4{
+h4.titulo{
 	margin-top: 0;
 }
-.box{
-    height: 65px;
+.v-align{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
 .box-uno{
 	height: 300px;
@@ -14,33 +16,92 @@ h4{
 }
 .nav-tabs>li>a {
     border-radius: 30px 30px 0 0;
+	border:none;
+	min-width: 250px;
+	height: 65px;
+	-webkit-box-shadow: 0 -10px 10px 0 rgba(0,0,0,0.5);
+	box-shadow: 0 -10px 10px 0 rgba(0,0,0,0.5);
 }
-i{
-	font-size: 50px;
+.nav-tabs>li>a h4 {
+	margin: 0;
+	position: relative;
 }
-.color-movil, #movil{
+.nav-tabs>li>a h4 span{
+	color: #fff;
+}
+.nav-tabs>li.active{
+    z-index: 2;
+}
+.color-movil, #movil,a.color-movil:hover,.nav-tabs>li a.color-movil:focus,.nav-tabs>li.active a.color-movil {
 	background-color: #4498EF;
+	border:none;
 }
-.color-tv, #tv{
+.color-movil h4 i[class^="icon-"]{
+	font-size: 39px;
+}
+.color-tv, #tv,.nav-tabs>li a.color-tv:hover,.nav-tabs>li a.color-tv:focus,.nav-tabs>li.active a.color-tv{
 	background-color: #44C793;
-
+	border:none;
 }
-.color-fija, #fija{
+.color-tv h4 i[class^="icon-"]{
+	font-size: 44px;
+}
+.color-fija, #fija,.nav-tabs>li a.color-fija:hover,.nav-tabs>li a.color-fija:focus,.nav-tabs>li.active a.color-fija{
 	background-color: #F7B84E;
+	border:none;
 }
-.color-banda, #banda {
+.color-fija h4 i[class^="icon-"]{
+	font-size: 45px;
+}
+.color-banda, #banda,.nav-tabs>li a.color-banda:hover,.nav-tabs>li a.color-banda:focus,.nav-tabs>li.active a.color-banda {
 	background-color: #F1745B;
+	border:none;
 }
+.color-banda h4 i[class^="icon-"]{
+	font-size: 41px;
+}
+.tab-content{
+    z-index: 1;
+    position: relative;	
+}
+.tab-pane{
+	-webkit-border-radius: 0 30px 30px 30px;
+	border-radius: 0 30px 30px 30px;
+	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+/*
 .nav-tabs>li.active {
     color: #fff;
     cursor: default;
     background-color: inherit;
     border: none;
     border-bottom-color: none;
-}
+}*/
 .nav-tabs {
     border-bottom:none;
 }
 .logos{
 	width: 7%;
+}
+@media (max-width: 1200px){
+	.nav-tabs>li>a {
+		min-width: 205px;
+	}
+}
+
+@media (max-width: 480px){
+	.container {
+		width: 100%;
+	}
+	.nav-tabs>li>a {
+		min-width: 24%;
+		height: 50px;
+	}
+	.nav-tabs>li>a h4 span {
+		display: none;
+	}
+	.nav-tabs>li>a h4 i[class^="icon-"]{
+		font-size: 1.5em;
+	}
 }

@@ -1,12 +1,29 @@
+html,body{
+	height: 100%;
+}
 body{
 	background-image: url(../img/bg-site.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
 	font-family: "Ubuntu", sans-serif;
 	color: #fff;
+	background-position: top center;
+	background-size: cover;
+	position: relative;
+    height: auto;
 }
-.container{
-	width: 80%;
+.bg-w{
+	background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+}
+a,button{
+	-webkit-transition: all .8s ease;
+	-moz-transition: all .8s ease;
+	-ms-transition: all .8s ease;
+	-o-transition: all .8s ease;
+	transition: all .8s ease;
 }
 /*header*/
 .menu{
@@ -21,4 +38,20 @@ body{
 }
 .logo-recarga~h2{
 	margin:4% 0;
+}
+footer{
+	position: relative;
+    z-index: 1;
+}
+.container {
+	width: 1100px;
+}
+.general{
+	z-index: 2;
+    position: relative;
+}
+@media (max-width: 1200px){
+	.container {
+		width: 900px;
+	}
 }
