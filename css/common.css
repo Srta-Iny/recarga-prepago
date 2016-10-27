@@ -9,12 +9,14 @@ body{
 	background-position: top center;
 	background-size: cover;
 	position: relative;
+	min-height: 100%;
+    height: auto;
 }
 .bg-w{
 	background-color: #fff;
     position: absolute;
     bottom: 0;
-    height: 50%;
+    height: 42%;
     width: 100%;
 }
 a,button{
@@ -76,5 +78,16 @@ footer{
 @media (max-width: 1200px){
 	.container {
 		width: 900px;
+	}
+}
+@media (max-width: 480px){
+	.container {
+		width: 100%;
+	}
+	.menu li  {
+	    margin: 0px 5px;
+	}
+	.logo-recarga~h2 {
+		font-size: 1.5em;
 	}
 }

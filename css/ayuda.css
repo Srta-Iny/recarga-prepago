@@ -1,22 +1,30 @@
 .caja-verde{
+	position: relative;
+	z-index: 2;
 	background-color: #45EFCE;
 	color: #275E7C;
 	padding: 3% 5%;
 	border-radius: 20px;
-	height: 400px;
+	height: 300px;
+	margin-bottom: 4%;
+	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
 }
 li{
 	display: block;
 }
 .pregunta{
+	position: relative;
 	display: table-cell;
 	width: 50%;
 }
 .pregunta:hover .respuesta{
 	display: block;
+	font-weight: 700;
 }
 .respuesta{
+	position: absolute;
+	right: 0;
 	display:none;
-	width: 45%;
-	margin-left: 55%;
+	width: 60%;
 }

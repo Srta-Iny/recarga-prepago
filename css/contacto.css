@@ -1,0 +1,58 @@
+
+.bg-izq{
+	position: relative;
+	z-index: 2;
+	padding: 2% 0 2% 3%;
+	background-color: #45efce;
+	border-radius: 25px 0 0 25px;
+	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+	margin-bottom: 2%;
+}
+.bg-der{
+	position: relative;
+	z-index: 2;
+	padding: 1%;
+	background-color: #42ccb2;
+	border-radius: 0 25px 25px 0;
+	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+	color: #324458;
+	margin-bottom: 2%;
+}
+.bg-izq h4{
+	margin: 3% 0 0 0; 
+	color: #324458;
+	font-size: 20px;
+}
+#consulta-nombre{
+	width: 60%;
+	border-radius: 25px;
+}
+#consulta-email{
+	width: 60%;
+	border-radius: 25px;
+}
+#consulta-telefono{
+	width: 60%;
+	border-radius: 25px;
+}
+#mensaje{
+	height: 180px;
+	width: 60%;
+	border-radius: 25px;
+}
+.consul, .reclamo, .coment, .enviar, .btn-default:hover,.btn-default.active, .btn-default:active,.btn-default.focus, .btn-default:focus,.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+	background-color: #324458;
+	color: #fff;
+	border-radius: 25px;
+	border-color: #324458;
+	margin: 3%;
+    width: 20%;
+}
+.enviar{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: inline-block;
+}
