@@ -12,17 +12,17 @@
 	<link rel="stylesheet" href="css/fontello.css">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/main.css">
+	<script src="js/actions.js"></script>
 </head>
 <body>
 	<div class="modal fade" tabindex="-1" role="dialog" id="alert-modal">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title">Modal title</h4>
-				</div>
 				<div class="modal-body">
-					<p>One fine body&hellip;</p>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat massa porttitor interdum bibendum. Vestibulum nec lacus vehicula, viverra nulla sit amet, tempor elit. Cras sit amet tellus finibus, tristique augue ut, mollis nulla. Cras id sem varius, convallis magna a, dapibus turpis. Pellentesque venenatis non arcu eu consectetur. Vivamus diam tortor, tempus ut convallis vitae, porta eu purus. Phasellus tincidunt leo ac nibh gravida sodales. Aliquam iaculis magna eget laoreet vulputate. In lobortis est ex, vitae eleifend enim hendrerit sed. Maecenas vitae sem ultricies, feugiat neque sed, semper purus. Etiam vel feugiat ex. In eget fringilla eros. Quisque tempus lacus ac nisl eleifend venenatis. Praesent porttitor ornare condimentum. Morbi pulvinar, leo eget dapibus pellentesque, orci nisl facilisis quam, non lacinia justo ligula ac eros. 
+					</p>
 				</div>
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
@@ -34,7 +34,7 @@
 			<div class="col-md-6 col-md-offset-3">
 				<ul class="list-inline menu">
 					<li><a href="index.html">HOME</a></li>
-					<li><a href="#">QUIENES SOMOS</a></li>
+					<li><a href="http://www.megacompra.cl/quienes_somos.html">QUIENES SOMOS</a></li>
 					<li><a href="ayuda.html">AYUDA</a></li>
 					<li><a href="contacto.html">CONTACTO</a></li>
 				</ul>
@@ -48,7 +48,7 @@
 		<div class="row">
 			<div class="col-xs-12 text-center">
 				<img src="img/logo-recarga.svg" class="img-responsive logo-recarga" alt="Responsive image">
-				<h2> &gt;&gt; Elige que productos quieres recargar</h2>
+				<h2> <i class="icon-flechas"></i> Elige que productos quieres recargar</h2>
 			</div>
 		</div>
 	</div>	
@@ -84,7 +84,7 @@
 				<div class="tab-content">
 	<!-- tab movil-->
 					<div role="tabpanel" class="tab-pane active box-uno" id="movil">
-						<p class="titulo"> &gt;&gt; Elige tu compañia </p>
+						<p class="titulo"> <i class="icon-flechas"></i> Elige tu compañia </p>
 						<div class="btn-group" role="group" aria-label="Botonera">
 							<button type="button" class="btn btn-default  logos"><img src="img/logo-Entel.png" class="img-responsive" alt="Responsive image"></button>
 							<button type="button" class="btn btn-default logos"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
@@ -94,11 +94,11 @@
 							<button type="button" class="btn btn-default logos"><img src="img/logo-VTR.png" class="img-responsive" alt="Responsive image"></button>
 							<button type="button" class="btn btn-default logos"><img src="img/logo-GTD-movil.png" class="img-responsive" alt="Responsive image"></button>
 						</div>
-						<ul class="list-inline">
+						<ul class="list-inline inputs">
 							<li>
 								<div class="form-group">
 									<label for="tel-movil">
-										<p class="titulo"> &gt;&gt; Ingresa tu número</p>
+										<p class="titulo"> <i class="icon-flechas"></i> Ingresa tu número</p>
 									</label>
 									<input type="tel" class="form-control" id="tel-movil" placeholder="9 12345678">
 									<span class="mensajeuno">9 digitos</span>
@@ -107,7 +107,7 @@
 							<li>
 								<div class="form-group">
 									<label for="monto-movil">
-										<p class="titulo"> &gt;&gt; Monto a recargar</p>
+										<p class="titulo"> <i class="icon-flechas"></i> Monto a recargar</p>
 									</label>
 									<input type="number" class="form-control" id="monto-movil" placeholder="Entre $100 y $20.000">
 									<span class="mensajeuno">Entre $100 y $20.000</span>
@@ -116,7 +116,7 @@
 							<li>
 								<div class="form-group">
 									<label for="email-movil">
-										<p class="titulo"> &gt;&gt; Correo electronico</p>
+										<p class="titulo"> <i class="icon-flechas"></i> Correo electronico</p>
 									</label>
 									<input type="email" class="form-control" id="email-movil" placeholder="Opcional">
 								</div>
@@ -128,17 +128,17 @@
 					</div>
 	<!-- tab tv-->
 					<div role="tabpanel" class="tab-pane box-uno" id="tv">
-						<p class="titulo"> &gt;&gt; Elige tu compañia </p>
+						<p class="titulo"> <i class="icon-flechas"></i> Elige tu compañia </p>
 						<div class="btn-group" role="group" aria-label="Botonera">
 							<button type="button" class="btn btn-default logos"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
 							<button type="button" class="btn btn-default logos"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
 							<button type="button" class="btn btn-default logos"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
 						</div>
-						<ul class="list-inline">
+						<ul class="list-inline inputs">
 							<li>
 								<div class="form-group">
 									<label for="tel-tv">
-										<p class="titulo"> &gt;&gt; Ingresa tu número</p>
+										<p class="titulo"> <i class="icon-flechas"></i> Ingresa tu número</p>
 									</label>
 									<input type="email" class="form-control" id="tel-tv" placeholder="9 12345678">
 									<span class="mensajeuno">9 digitos</span>
@@ -147,7 +147,7 @@
 							<li>
 								<div class="form-group">
 									<label for="monto-tv">
-										<p class="titulo"> &gt;&gt; Monto a recargar</p>
+										<p class="titulo"> <i class="icon-flechas"></i> Monto a recargar</p>
 									</label>
 									<input type="email" class="form-control" id="monto-tv" placeholder="Entre $100 y $20.000">
 									<span class="mensajeuno">Entre $100 y $20.000</span>
@@ -156,7 +156,7 @@
 							<li>
 								<div class="form-group">
 									<label for="email-tv">
-										<p class="titulo"> &gt;&gt; Correo electronico</p>
+										<p class="titulo"> <i class="icon-flechas"></i> Correo electronico</p>
 									</label>
 									<input type="email" class="form-control" id="email-tv" placeholder="Opcional">
 								</div>
@@ -168,18 +168,18 @@
 					</div>
 	<!--tab red fija-->
 					<div role="tabpanel" class="tab-pane box-uno" id="fija">
-						<p class="titulo"> &gt;&gt; Elige tu compañia </p>
+						<p class="titulo"> <i class="icon-flechas"></i> Elige tu compañia </p>
 						<div class="btn-group" role="group" aria-label="Botonera">
 							<button type="button" class="btn btn-default logos"><img src="img/logo-Entel.png" class="img-responsive" alt="Responsive image"></button>
 							<button type="button" class="btn btn-default logos"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
 							<button type="button" class="btn btn-default logos"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
 							<button type="button" class="btn btn-default logos"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
 						</div>
-						<ul class="list-inline">
+						<ul class="list-inline inputs">
 							<li>
 								<div class="form-group">
 									<label for="tel-fija">
-										<p class="titulo"> &gt;&gt; Ingresa tu número</p>
+										<p class="titulo"> <i class="icon-flechas"></i> Ingresa tu número</p>
 									</label>
 									<input type="email" class="form-control" id="tel-fija" placeholder="9 12345678">
 									<span class="mensajeuno">9 digitos</span>
@@ -188,7 +188,7 @@
 							<li>
 								<div class="form-group">
 									<label for="monto-fija">
-										<p class="titulo"> &gt;&gt; Monto a recargar</p>
+										<p class="titulo"> <i class="icon-flechas"></i> Monto a recargar</p>
 									</label>
 									<input type="email" class="form-control" id="monto-fija" placeholder="Entre $100 y $20.000">
 									<span class="mensajeuno">Entre $100 y $20.000</span>
@@ -197,7 +197,7 @@
 							<li>
 								<div class="form-group">
 									<label for="email-fija">
-										<p class="titulo"> &gt;&gt; Correo electronico</p>
+										<p class="titulo"> <i class="icon-flechas"></i> Correo electronico</p>
 									</label>
 									<input type="email" class="form-control" id="email-fija" placeholder="Opcional">
 								</div>
@@ -209,7 +209,7 @@
 					</div>
 	<!--tab banda ancha-->
 					<div role="tabpanel" class="tab-pane box-uno" id="banda">
-						<p class="titulo"> &gt;&gt; Elige tu compañia </p>
+						<p class="titulo"> <i class="icon-flechas"></i> Elige tu compañia </p>
 						<div class="btn-group" role="group" aria-label="Botonera">
 							<button type="button" class="btn btn-default logos"><img src="img/logo-Entel.png" class="img-responsive" alt="Responsive image"></button>
 							<button type="button" class="btn btn-default logos"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
@@ -222,11 +222,11 @@
 							<button type="button" class="btn btn-default logos"><img src="img/logo-VTR.png" class="img-responsive" alt="Responsive image"></button>
 							<button type="button" class="btn btn-default logos"><img src="img/logo-Virgin.png" class="img-responsive" alt="Responsive image"></button>
 						</div>
-						<ul class="list-inline">
+						<ul class="list-inline inputs">
 							<li>
 								<div class="form-group">
 									<label for="tel-banda">
-										<p class="titulo"> &gt;&gt; Ingresa tu número</p>
+										<p class="titulo"> <i class="icon-flechas"></i> Ingresa tu número</p>
 									</label>
 									<input type="email" class="form-control" id="tel-banda" placeholder="9 12345678">
 									<span class="mensajeuno">9 digitos</span>
@@ -235,7 +235,7 @@
 							<li>
 								<div class="form-group">
 									<label for="monto-banda">
-										<p class="titulo"> &gt;&gt; Monto a recargar</p>
+										<p class="titulo"> <i class="icon-flechas"></i> Monto a recargar</p>
 									</label>
 									<input type="email" class="form-control" id="monto-banda" placeholder="Entre $100 y $20.000">
 									<span class="mensajeuno">Entre $100 y $20.000</span>
@@ -244,7 +244,7 @@
 							<li>
 								<div class="form-group">
 									<label for="email-banda">
-										<p class="titulo"> &gt;&gt; Correo electronico</p>
+										<p class="titulo"> <i class="icon-flechas"></i> Correo electronico</p>
 									</label>
 									<input type="email" class="form-control" id="email-banda" placeholder="Opcional">
 								</div>

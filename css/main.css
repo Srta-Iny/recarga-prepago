@@ -88,6 +88,37 @@ p.titulo{
 	font-weight: 400;
 	font-size: 20px;
 }
+.logos img,.logos img:focus{
+	-webkit-transition: all .8s ease;
+	-moz-transition: all .8s ease;
+	-ms-transition: all .8s ease;
+	-o-transition: all .8s ease;
+	transition: all .8s ease;
+	filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: url(grayscale.svg#greyscale);
+    filter: gray;
+    -webkit-filter: grayscale(1);
+}
+.logos:hover,.logos.active,.logos:focus,.logos:active{
+	background-color: #fff !important;
+	border:none;
+}
+.logos:hover img,.logos.active img{
+	filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+.logos.active img{
+	transform: scale(1.1);
+}
 #movil .logos, #banda .logos{
 	width: 7%;
 }
@@ -107,8 +138,9 @@ p.titulo{
 .btn-group>.btn:last-child:not(:first-child), .btn-group>.dropdown-toggle:not(:first-child){
 	border-radius:0 25px 25px 0;
 } 
-.form-control{
+.inputs .form-control{
 	border-radius: 20px;
+	text-align: center;
 }
 .recarga{
 	background-color: #275E7C;
@@ -116,6 +148,14 @@ p.titulo{
 	color: #fff;
 	font-weight: 700;
 	border-color: #275E7C;
+	text-transform: uppercase;
+	padding: 6px 20px;
+	border:none;
+}
+.recarga:hover{
+	color: #45EFCE;
+	background-color: #275E7C;
+	border:none;
 }
 .mPago{
 	color: #324458;
@@ -126,6 +166,37 @@ p.titulo{
 .webpay{
 	width: 12%;
 	margin: 0 auto;
+}
+.inputs{
+	margin-top: 30px;
+}
+.inputs .form-group{
+	position: relative;
+}
+.inputs .form-group .mensajeuno{
+	position: absolute;
+    left: 20%;
+    background-color: #D34A44;
+    padding: 6px 12px;
+    border-radius: 20px;
+	min-width: 155px;
+    text-align: center;
+	margin-top: 10px;
+}
+.inputs .form-group .mensajeuno:before{
+	content: '';
+	color: #D34A44;
+	position: absolute;
+	display: block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-bottom: 15px dashed;
+    border-bottom: 15px solid\9;
+    border-right: 11px solid transparent;
+    border-left: 11px solid transparent;
+    margin: -20px auto;
+    left: 17px;
 }
 /*tab resposive*/
 @media (max-width: 1200px){
