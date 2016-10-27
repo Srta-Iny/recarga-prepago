@@ -1,7 +1,7 @@
 
-/*formulario recarga*/
-h4.titulo{
-	margin-top: 0;
+/*formulario recarga tab*/
+.nav-tabs {
+    border-bottom:none;
 }
 .v-align{
 	position: absolute;
@@ -10,7 +10,7 @@ h4.titulo{
 }
 .box-uno{
 	height: 300px;
-	padding-top: 5%;
+	padding-top: 4%;
     padding-left: 5%;
 	border-radius: 30px 30px;
 }
@@ -38,6 +38,7 @@ h4.titulo{
 }
 .color-movil h4 i[class^="icon-"]{
 	font-size: 39px;
+	color:#204F63;
 }
 .color-tv, #tv,.nav-tabs>li a.color-tv:hover,.nav-tabs>li a.color-tv:focus,.nav-tabs>li.active a.color-tv{
 	background-color: #44C793;
@@ -45,6 +46,7 @@ h4.titulo{
 }
 .color-tv h4 i[class^="icon-"]{
 	font-size: 44px;
+	color:#307A56;
 }
 .color-fija, #fija,.nav-tabs>li a.color-fija:hover,.nav-tabs>li a.color-fija:focus,.nav-tabs>li.active a.color-fija{
 	background-color: #F7B84E;
@@ -52,6 +54,7 @@ h4.titulo{
 }
 .color-fija h4 i[class^="icon-"]{
 	font-size: 45px;
+	color:#A37D47;
 }
 .color-banda, #banda,.nav-tabs>li a.color-banda:hover,.nav-tabs>li a.color-banda:focus,.nav-tabs>li.active a.color-banda {
 	background-color: #F1745B;
@@ -59,6 +62,7 @@ h4.titulo{
 }
 .color-banda h4 i[class^="icon-"]{
 	font-size: 41px;
+	color:#95463F;
 }
 .tab-content{
     z-index: 1;
@@ -78,12 +82,52 @@ h4.titulo{
     border: none;
     border-bottom-color: none;
 }*/
-.nav-tabs {
-    border-bottom:none;
+/* formulario recarga opciones*/
+p.titulo{
+	margin-top: 0;
+	font-weight: 400;
+	font-size: 20px;
 }
-.logos{
+#movil .logos, #banda .logos{
 	width: 7%;
 }
+#tv .logos{
+	width: 11%;
+}
+#fija .logos{
+	width: 9%;
+}
+.btn-default, .btn-default:hover{
+	background-color: #fff;
+	border-color: #fff;
+}
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle){
+	border-radius:25px 0  0 25px;
+}
+.btn-group>.btn:last-child:not(:first-child), .btn-group>.dropdown-toggle:not(:first-child){
+	border-radius:0 25px 25px 0;
+} 
+.form-control{
+	border-radius: 20px;
+}
+.recarga{
+	background-color: #275E7C;
+	border-radius: 20px;
+	color: #fff;
+	font-weight: 700;
+	border-color: #275E7C;
+}
+.mPago{
+	color: #324458;
+	font-weight: 700;
+	font-size: 17px;
+	margin: 2% 0 0 0;
+}
+.webpay{
+	width: 12%;
+	margin: 0 auto;
+}
+/*tab resposive*/
 @media (max-width: 1200px){
 	.nav-tabs>li>a {
 		min-width: 205px;

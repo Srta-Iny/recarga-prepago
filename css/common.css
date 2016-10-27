@@ -32,6 +32,13 @@ a,button{
     padding: 2%;
     margin-top: 5%;
 }
+.menu a{
+	color: #45EFCE;
+	font-weight: bold;
+}
+.menu li{
+	margin: 0 20px;
+}
 .logo-recarga{
 	margin: 5% auto;
     width: 55%;

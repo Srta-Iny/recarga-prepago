@@ -1,0 +1,22 @@
+.caja-verde{
+	background-color: #45EFCE;
+	color: #275E7C;
+	padding: 3% 5%;
+	border-radius: 20px;
+	height: 400px;
+}
+li{
+	display: block;
+}
+.pregunta{
+	display: table-cell;
+	width: 50%;
+}
+.pregunta:hover .respuesta{
+	display: block;
+}
+.respuesta{
+	display:none;
+	width: 45%;
+	margin-left: 55%;
+}

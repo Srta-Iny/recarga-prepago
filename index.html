@@ -14,31 +14,19 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<section>
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<div class="modal fade" tabindex="-1" role="dialog">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title">Modal title</h4>
-							</div>
-							<div class="modal-body">
-								<p>One fine body&hellip;</p>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-								<button type="button" class="btn btn-primary">Save changes</button>
-							</div>
-						</div><!-- /.modal-content -->
-					</div><!-- /.modal-dialog -->
-				</div><!-- /.modal -->
-			</div>
-		</div>
-	</div>
-</section>
+	<div class="modal fade" tabindex="-1" role="dialog" id="alert-modal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Modal title</h4>
+				</div>
+				<div class="modal-body">
+					<p>One fine body&hellip;</p>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
 <!-- cabecera-->
 <header class="fondo">
 	<div class="container">
@@ -96,7 +84,7 @@
 				<div class="tab-content">
 	<!-- tab movil-->
 					<div role="tabpanel" class="tab-pane active box-uno" id="movil">
-						<h4 class="titulo"> &gt;&gt; Elige tu compañia </h4>
+						<p class="titulo"> &gt;&gt; Elige tu compañia </p>
 						<div class="btn-group" role="group" aria-label="Botonera">
 							<button type="button" class="btn btn-default  logos"><img src="img/logo-Entel.png" class="img-responsive" alt="Responsive image"></button>
 							<button type="button" class="btn btn-default logos"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
@@ -110,36 +98,38 @@
 							<li>
 								<div class="form-group">
 									<label for="tel-movil">
-										<h4 class="titulo"> &gt;&gt; Ingresa tu número</h4>
+										<p class="titulo"> &gt;&gt; Ingresa tu número</p>
 									</label>
 									<input type="tel" class="form-control" id="tel-movil" placeholder="9 12345678">
+									<span class="mensajeuno">9 digitos</span>
 								</div>
 							</li>
 							<li>
 								<div class="form-group">
 									<label for="monto-movil">
-										<h4 class="titulo"> &gt;&gt; Monto a recargar</h4>
+										<p class="titulo"> &gt;&gt; Monto a recargar</p>
 									</label>
 									<input type="number" class="form-control" id="monto-movil" placeholder="Entre $100 y $20.000">
+									<span class="mensajeuno">Entre $100 y $20.000</span>
 								</div>
 							</li>
 							<li>
 								<div class="form-group">
 									<label for="email-movil">
-										<h4 class="titulo"> &gt;&gt; Correo electronico</h4>
+										<p class="titulo"> &gt;&gt; Correo electronico</p>
 									</label>
 									<input type="email" class="form-control" id="email-movil" placeholder="Opcional">
 								</div>
 							</li>
 							<li>
-								<button class="btn btn-default" type="submit">Recarga</button>
+								<button class="btn btn-default recarga" type="submit">Recarga</button>
 							</li>
 						</ul>
 					</div>
 	<!-- tab tv-->
 					<div role="tabpanel" class="tab-pane box-uno" id="tv">
-						<h4 class="titulo"> &gt;&gt; Elige tu compañia </h4>
-						<div class="btn-group" role="group" aria-label="...">
+						<p class="titulo"> &gt;&gt; Elige tu compañia </p>
+						<div class="btn-group" role="group" aria-label="Botonera">
 							<button type="button" class="btn btn-default logos"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
 							<button type="button" class="btn btn-default logos"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
 							<button type="button" class="btn btn-default logos"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
@@ -148,36 +138,38 @@
 							<li>
 								<div class="form-group">
 									<label for="tel-tv">
-										<h4 class="titulo"> &gt;&gt; Ingresa tu número</h4>
+										<p class="titulo"> &gt;&gt; Ingresa tu número</p>
 									</label>
 									<input type="email" class="form-control" id="tel-tv" placeholder="9 12345678">
+									<span class="mensajeuno">9 digitos</span>
 								</div>
 							</li>
 							<li>
 								<div class="form-group">
 									<label for="monto-tv">
-										<h4 class="titulo"> &gt;&gt; Monto a recargar</h4>
+										<p class="titulo"> &gt;&gt; Monto a recargar</p>
 									</label>
 									<input type="email" class="form-control" id="monto-tv" placeholder="Entre $100 y $20.000">
+									<span class="mensajeuno">Entre $100 y $20.000</span>
 								</div>
 							</li>
 							<li>
 								<div class="form-group">
 									<label for="email-tv">
-										<h4 class="titulo"> &gt;&gt; Correo electronico</h4>
+										<p class="titulo"> &gt;&gt; Correo electronico</p>
 									</label>
 									<input type="email" class="form-control" id="email-tv" placeholder="Opcional">
 								</div>
 							</li>
 							<li>
-								<button class="btn btn-default" type="submit">Recarga</button>
+								<button class="btn btn-default recarga" type="submit">Recarga</button>
 							</li>
 						</ul>
 					</div>
 	<!--tab red fija-->
 					<div role="tabpanel" class="tab-pane box-uno" id="fija">
-						<h4> &gt;&gt; Elige tu compañia </h4>
-						<div class="btn-group" role="group" aria-label="...">
+						<p class="titulo"> &gt;&gt; Elige tu compañia </p>
+						<div class="btn-group" role="group" aria-label="Botonera">
 							<button type="button" class="btn btn-default logos"><img src="img/logo-Entel.png" class="img-responsive" alt="Responsive image"></button>
 							<button type="button" class="btn btn-default logos"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
 							<button type="button" class="btn btn-default logos"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
@@ -187,36 +179,38 @@
 							<li>
 								<div class="form-group">
 									<label for="tel-fija">
-										<h4 class="titulo"> &gt;&gt; Ingresa tu número</h4>
+										<p class="titulo"> &gt;&gt; Ingresa tu número</p>
 									</label>
 									<input type="email" class="form-control" id="tel-fija" placeholder="9 12345678">
+									<span class="mensajeuno">9 digitos</span>
 								</div>
 							</li>
 							<li>
 								<div class="form-group">
 									<label for="monto-fija">
-										<h4 class="titulo"> &gt;&gt; Monto a recargar</h4>
+										<p class="titulo"> &gt;&gt; Monto a recargar</p>
 									</label>
 									<input type="email" class="form-control" id="monto-fija" placeholder="Entre $100 y $20.000">
+									<span class="mensajeuno">Entre $100 y $20.000</span>
 								</div>
 							</li>
 							<li>
 								<div class="form-group">
 									<label for="email-fija">
-										<h4 class="titulo"> &gt;&gt; Correo electronico</h4>
+										<p class="titulo"> &gt;&gt; Correo electronico</p>
 									</label>
 									<input type="email" class="form-control" id="email-fija" placeholder="Opcional">
 								</div>
 							</li>
 							<li>
-								<button class="btn btn-default" type="submit">Recarga</button>
+								<button class="btn btn-default recarga" type="submit">Recarga</button>
 							</li>
 						</ul>
 					</div>
 	<!--tab banda ancha-->
 					<div role="tabpanel" class="tab-pane box-uno" id="banda">
-						<h4 class="titulo"> &gt;&gt; Elige tu compañia </h4>
-						<div class="btn-group" role="group" aria-label="...">
+						<p class="titulo"> &gt;&gt; Elige tu compañia </p>
+						<div class="btn-group" role="group" aria-label="Botonera">
 							<button type="button" class="btn btn-default logos"><img src="img/logo-Entel.png" class="img-responsive" alt="Responsive image"></button>
 							<button type="button" class="btn btn-default logos"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
 							<button type="button" class="btn btn-default logos"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
@@ -232,29 +226,31 @@
 							<li>
 								<div class="form-group">
 									<label for="tel-banda">
-										<h4 class="titulo"> &gt;&gt; Ingresa tu número</h4>
+										<p class="titulo"> &gt;&gt; Ingresa tu número</p>
 									</label>
 									<input type="email" class="form-control" id="tel-banda" placeholder="9 12345678">
+									<span class="mensajeuno">9 digitos</span>
 								</div>
 							</li>
 							<li>
 								<div class="form-group">
 									<label for="monto-banda">
-										<h4 class="titulo"> &gt;&gt; Monto a recargar</h4>
+										<p class="titulo"> &gt;&gt; Monto a recargar</p>
 									</label>
 									<input type="email" class="form-control" id="monto-banda" placeholder="Entre $100 y $20.000">
+									<span class="mensajeuno">Entre $100 y $20.000</span>
 								</div>
 							</li>
 							<li>
 								<div class="form-group">
 									<label for="email-banda">
-										<h4 class="titulo"> &gt;&gt; Correo electronico</h4>
+										<p class="titulo"> &gt;&gt; Correo electronico</p>
 									</label>
 									<input type="email" class="form-control" id="email-banda" placeholder="Opcional">
 								</div>
 							</li>
 							<li>
-								<button class="btn btn-default" type="submit">Recarga</button>
+								<button class="btn btn-default recarga" type="submit">Recarga</button>
 							</li>
 						</ul>
 					</div>
@@ -268,9 +264,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<div>
+				<div class="mPago text-center">
 					Medios de pago
-					<img src="img/webpay.jpg" alt="webpay">
+					<img src="img/webpay.jpg" class="img-responsive webpay" alt="Responsive image">
 				</div>
 			</div>
 		</div>
