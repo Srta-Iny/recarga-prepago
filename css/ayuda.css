@@ -10,8 +10,19 @@
 	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
 	box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
 }
-li{
-	display: block;
+.caja-verde a{
+	color:#275E7C;
+}
+.caja-verde a:hover{
+	text-decoration: none;
+}
+.list-num{
+	margin-top: 40px;
+	width: 30%;
+}
+.list-num li{
+	display: list-item;
+	margin: 5px 0;
 }
 .pregunta{
 	position: relative;
@@ -27,4 +38,9 @@ li{
 	right: 0;
 	display:none;
 	width: 60%;
+}
+@media (max-width: 480px){
+	.list-num{
+		width: 100%;
+	}
 }

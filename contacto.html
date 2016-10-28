@@ -16,31 +16,26 @@
 </head>
 <body>
 <!-- cabecera-->
-	<header  class="fondo">
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-md-6 col-md-offset-3 hidden-xs hidden-ms">
-					<ul class="list-inline menu">
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="http://www.megacompra.cl/quienes_somos.html">QUIENES SOMOS</a></li>
-						<li><a href="ayuda.html">AYUDA</a></li>
-						<li><a href="contacto.html">CONTACTO</a></li>
-					</ul>
-				</div>
-				<div class="col-xs-12 hidden-md hidden-lg">
-					<ul class="list-inline topnav" id="myTopnav">
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="http://www.megacompra.cl/quienes_somos.html">QUIENES SOMOS</a></li>
-						<li><a href="ayuda.html">AYUDA</a></li>
-						<li><a href="contacto.html">CONTACTO</a></li>
-						<li class="icon">
-							<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
-						</li>
-					</ul>
-				</div> 
+<header class="fondo"><nav class="navbar">
+	<div class="container">		
+			<div class="navbar-header">					
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-gral" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 			</div>
-		</div>
-	</header>
+			<div class="collapse navbar-collapse" id="menu-gral">
+				<ul class="nav navbar-nav menu">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="http://www.megacompra.cl/quienes_somos.html">QUIENES SOMOS</a></li>
+					<li><a href="ayuda.html">AYUDA</a></li>
+					<li><a href="contacto.html">CONTACTO</a></li>
+				</ul>
+			</div>
+	</div>
+</nav></header>
 <!--seccion logo recarga-->
 	<section>
 		<div class="container">

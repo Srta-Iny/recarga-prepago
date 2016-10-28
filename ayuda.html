@@ -16,31 +16,26 @@
 </head>
 <body>
 <!-- cabecera-->
-	<header  class="fondo">
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-md-6 col-md-offset-3 hidden-xs hidden-ms">
-					<ul class="list-inline menu">
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="http://www.megacompra.cl/quienes_somos.html">QUIENES SOMOS</a></li>
-						<li><a href="ayuda.html">AYUDA</a></li>
-						<li><a href="contacto.html">CONTACTO</a></li>
-					</ul>
-				</div>
-				<div class="col-xs-12 hidden-md hidden-lg">
-					<ul class="list-inline topnav" id="myTopnav">
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="http://www.megacompra.cl/quienes_somos.html">QUIENES SOMOS</a></li>
-						<li><a href="ayuda.html">AYUDA</a></li>
-						<li><a href="contacto.html">CONTACTO</a></li>
-						<li class="icon">
-	    					<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
-						</li>
-					</ul>
-				</div> 
+<header class="fondo"><nav class="navbar">
+	<div class="container">		
+			<div class="navbar-header">					
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-gral" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 			</div>
-		</div>
-	</header>
+			<div class="collapse navbar-collapse" id="menu-gral">
+				<ul class="nav navbar-nav menu">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="http://www.megacompra.cl/quienes_somos.html">QUIENES SOMOS</a></li>
+					<li><a href="ayuda.html">AYUDA</a></li>
+					<li><a href="contacto.html">CONTACTO</a></li>
+				</ul>
+			</div>
+	</div>
+</nav></header>
 <!--seccion logo recarga-->
 	<section>
 		<div class="container">
@@ -58,13 +53,19 @@
 			<div class="row">
 				<div class="col-xs-12 caja-verde">
 					<h4><i class="icon-flechas"></i>PREGUNTAS FRECUENTES</h4>
-					<ol class="row">
-						<li>¿Cómo hacer una recarga?</li>
-						<li>¿Qué servicios puedo recargar?</li>
-						<li>¿Con qué puedo pagar las recargas?</li>
-						<li>¿qué hago si me descontaron el monto en mi tarjeta y no me llegó la recarga?</li>
-						<li>¿Por qué piden mi email?</li>
-						<li>¿Que es Webpay One Click</li>
+					<ol class="list-num">
+						<li><a href="javascript:void(0)" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="Debes ir a nuestra página de inicio y pinchando sobre el botón “Compra o regala una recarga” encontrarás el formulario para hacer la recarga del producto que necesites. Es así de fácil, rápido y muy seguro!">¿Cómo hacer una recarga?</a></li>
+						<li><a href="javascript:void(0)" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="En RecargaFácil.cl podrás recargar tus servicios de Televisión, Telefonía Móvil, Telefonía Fija y Banda Ancha Móvil de las distintas compañías del país: Movistar, Entel, Claro, Virgin Mobile, VTR, WOM, GTD Móvil, Móvil Falabella, Colo-Colo móvil, Telefónica del Sur, Directv y TIP Wifi Redvoiss.">¿Qué servicios puedo recargar?</a></li>
+						<li><a href="javascript:void(0)" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="Con cualquier tarjeta bancaria de débito o crédito que acepte el sistema webpay y webpay One Click. Además a través del sistema PagaFácil podrás pagar con tu tarjeta ABCDin y con tus tarjetas Cencosud y muy pronto sumaremos otras casas comerciales como medio de pago válido.">¿Con qué puedo pagar las recargas?</a></li>
+						<li><a href="javascript:void(0)" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="En estos casos debes enviar un correo a contacto@multicaja.cl informando el numero del prepago, compañía, día y hora del la recarga, y monto. Para más información visita nuestra zona de contacto">¿qué hago si me descontaron el monto en mi tarjeta y no me llegó la recarga?</a></li>
+						<li><a href="javascript:void(0)" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="El email será tu nombre de usuario en tu página personal de Recarga Fácil y además, a través de este email, te enviaremos los comprobantes de cada recarga que hagas.">¿Por qué piden mi email?</a></li>
+						<li><a href="javascript:void(0)" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="right" data-content="Webpay One Click es un medio de pago de transbank que permite comprar nuestros productos con un solo click usando la tarjeta de crédito de un banco nacional que tengas registrada.
+Para usarlo debes tener activada tu cuenta en RecargaFácil porque te pediremos tu usuario y clave.
+Como registro esa tarjeta?
+Si estás activo en RecargaFácil y eliges ocupar one click por primera vez, haremos un proceso de inscripción donde por tu seguridad enrolaremos un único producto el cual podras recargar con este medio de pago.
+En este proceso de inscripción simularemos una compra de $1 que no será cobrada.
+Después de eso podrás ocupar One Click con nosotros!
+Si deseas modificar tu producto enrolado debes ingresar al sitio privado y desvincular tu tarjeta y volver a realizar el proceso de inscripción ">¿Que es Webpay One Click</a></li>
 					</ol>
 				</div>
 			</div>

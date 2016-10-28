@@ -26,7 +26,11 @@ a,button{
 	-ms-transition: all .8s ease;
 	-o-transition: all .8s ease;
 	transition: all .8s ease;
-	outline: none;
+	outline: none !important;
+}
+a:focus,button:focus,a:active,button:active,.btn-default:focus{
+	border: none;
+    outline: none !important;
 }
 /*header*/
 #menu-gral{
@@ -119,23 +123,8 @@ footer{
 	}
 }
 /*menu desplegable */
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-ul.topnav li {float: left;}
-
-ul.topnav li a {
-  display: inline-block;
-  color: #45EFCE;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 17px;
+.txt-center{
+	text-align: center;
 }
 
 /* Lightbox */
@@ -201,8 +190,11 @@ ul.topnav li a {
     margin: 5px auto;
     font-size: 20px;
 }
+.recarga-form .btn-red{
+	margin-top: 40px;
+}
 .modal .btn-blue{	
-	display: block;
+	display: inline-block;
 	background-color: #275E7C;
 	color: #fff;
 	text-transform: uppercase;
@@ -212,4 +204,19 @@ ul.topnav li a {
 }
 .modal .result .btn-blue{
 	margin-top: 10px;
+}
+.popover{
+	border: none !important;
+	background-color: #D34A44;
+	max-width: 500px;
+}
+.popover-content{
+	color: #fff;
+	background-color: #D34A44;
+}
+.popover.right>.arrow:after {
+    border-right-color: #D34A44;
+}
+.popover.bottom>.arrow:after {
+    border-bottom-color: #D34A44;
 }
