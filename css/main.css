@@ -228,11 +228,7 @@ p.titulo{
 		min-width: 205px;
 	}
 }
-
 @media (max-width: 480px){
-	.container {
-		width: 100%;
-	}
 	.nav-tabs>li>a {
 		min-width: 24%;
 		height: 50px;

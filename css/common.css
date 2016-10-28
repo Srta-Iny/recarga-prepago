@@ -151,7 +151,7 @@ footer{
 	width: 50%;
 	margin-top: 5px;
 }
-#modal-pre .title img{
+#modal-pre .title img,#modal-error .title img{
 	width: 40%;
 }
 #modal-pre .list-group{
@@ -167,6 +167,18 @@ footer{
 	border-radius: 20px;
 	background-color: #EDEDED;
 }
+#modal-error .txt{
+	text-align: center;
+	margin: 60px auto 20px auto;
+}
+#modal-error small{
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+}
+#modal-error .btn-blue{
+	margin: 30px auto !important;
+}
 .modal p.titulo{
 	color: #275E7C;
 	font-weight: bold;
@@ -176,6 +188,8 @@ footer{
 	text-align: center;
 	margin: 10px auto;
     display: block;
+	left: 0;
+    right: 0;
 }
 .modal .result{
 	width: 80%;
@@ -224,4 +238,13 @@ footer{
 }
 .popover.bottom>.arrow:after {
     border-bottom-color: #D34A44;
+}
+
+@media (max-width: 480px){
+	.container {
+		width: 100%;
+	}
+	.menu{
+		width: 80%;
+	}
 }
