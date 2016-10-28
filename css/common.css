@@ -16,6 +16,7 @@ body{
 	background-color: #fff;
     position: absolute;
     bottom: 0;
+	left: 0;
     height: 50%;
     width: 100%;
 }
@@ -25,13 +26,21 @@ a,button{
 	-ms-transition: all .8s ease;
 	-o-transition: all .8s ease;
 	transition: all .8s ease;
+	outline: none;
 }
 /*header*/
+#menu-gral{
+	text-align: center;
+}
 .menu{
 	background-color: #607D8B;
     border-radius: 20px;
     padding: 2%;
     margin-top: 5%;
+	margin-left: auto;
+    margin-right: auto;
+    float: none;
+    display: inline-block;
 }
 .menu a{
 	color: #45EFCE;
@@ -44,6 +53,24 @@ a,button{
 }
 .menu li{
 	margin: 0 20px;
+}
+
+.menu li a{
+	padding: 2px 0px;
+    border-bottom: 1px solid;
+	border-bottom-color: transparent;
+}
+.menu li a:hover,.menu li.active a{
+	background:none;
+	color: #45EFCE;
+	border-bottom-color:#45EFCE;
+}
+.navbar-header .navbar-toggle{
+	color: #45EFCE;
+	border: 1px solid;
+}
+.navbar-toggle .icon-bar{
+	background-color: #45EFCE;
 }
 .logo-recarga{
 	margin: 2% auto;
@@ -63,16 +90,16 @@ footer{
 	z-index: 2;
     position: relative;
 }
-#alert-modal{
+.modal{
 	color:#000;
 }
-#alert-modal .close{
+.modal .close{
 	color: #45EFCE;
 	font-size: 45px;
 	line-height: 10px;
 	opacity: 1;
 }
-#alert-modal .modal-content{
+.modal .modal-content{
 	border:4px solid #45EFCE;
 }
 @media (max-width: 1200px){
@@ -111,31 +138,78 @@ ul.topnav li a {
   font-size: 17px;
 }
 
-ul.topnav li a:hover {}
-
-ul.topnav li.icon {display: none;}
-
-@media screen and (max-width:680px) {
-  ul.topnav li {display: none;}
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block;
-  }
+/* Lightbox */
+.wom{
+	background-image:url(../img/wom-promo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	overflow: hidden;
 }
-
-@media screen and (max-width:680px) {
-  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.topnav.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.topnav.responsive li a {
+.wom .modal-body{
+	min-height: 550px;
+}
+.wom .modal-body .bg-w{
+	height: 60px;
+	text-align: center;
+}
+.wom .modal-body .bg-w img{
+	width: 50%;
+	margin-top: 5px;
+}
+#modal-pre .title img{
+	width: 40%;
+}
+#modal-pre .list-group{
+	margin-left: 60px;
+    width: 60%;
+}
+#modal-pre .list-group .list-group-item{
+	border: none;
+	color: #275E7C;
+	font-weight: bold;
+}
+#modal-pre .list-group .list-group-item.active{
+	border-radius: 20px;
+	background-color: #EDEDED;
+}
+.modal p.titulo{
+	color: #275E7C;
+	font-weight: bold;
+}
+.modal small{
+	color: #275E7C;
+	text-align: center;
+	margin: 10px auto;
     display: block;
-    text-align: left;
-  }
+}
+.modal .result{
+	width: 80%;
+    margin: 40px auto 10px auto;
+	font-size: 11px;
+}
+.modal .result .titulo{
+	text-align: center;
+}
+.modal .btn-red{
+	display: block;
+	background-color: #D34A44;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 20px;
+    margin: 5px auto;
+    font-size: 20px;
+}
+.modal .btn-blue{	
+	display: block;
+	background-color: #275E7C;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 20px;
+    margin: 5px auto;
+}
+.modal .result .btn-blue{
+	margin-top: 10px;
 }

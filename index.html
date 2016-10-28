@@ -15,44 +15,96 @@
 	<script src="js/actions.js"></script>
 </head>
 <body>
-	<div class="modal fade" tabindex="-1" role="dialog" id="alert-modal">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-body">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat massa porttitor interdum bibendum. Vestibulum nec lacus vehicula, viverra nulla sit amet, tempor elit. Cras sit amet tellus finibus, tristique augue ut, mollis nulla. Cras id sem varius, convallis magna a, dapibus turpis. Pellentesque venenatis non arcu eu consectetur. Vivamus diam tortor, tempus ut convallis vitae, porta eu purus. Phasellus tincidunt leo ac nibh gravida sodales. Aliquam iaculis magna eget laoreet vulputate. In lobortis est ex, vitae eleifend enim hendrerit sed. Maecenas vitae sem ultricies, feugiat neque sed, semper purus. Etiam vel feugiat ex. In eget fringilla eros. Quisque tempus lacus ac nisl eleifend venenatis. Praesent porttitor ornare condimentum. Morbi pulvinar, leo eget dapibus pellentesque, orci nisl facilisis quam, non lacinia justo ligula ac eros. 
-					</p>
+<!-- MODAL WOM -->
+<div class="modal fade" tabindex="-1" role="dialog" id="modal-wom">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content wom">
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<div class="bg-w">
+					<a href="#" data-dismiss="modal"><img src="img/btn-recarga-pre.svg" /></a>
 				</div>
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- MODAL Termino -->
+<div class="modal fade" tabindex="-1" role="dialog" id="modal-pre">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h2 class="title"><img src="img/btn-recarga-pre.svg" /></h2>
+				<!-- formulario de envio -->
+				<form class="recarga-form hidden">
+				<p class="titulo"><i class="icon-flechas"></i> Confirma los datos de la compra</p>
+				<ul class="list-group">
+					<li class="list-group-item active">Monto a regargar: $ <span class="monto">0</span></li>
+					<li class="list-group-item">Nº a recargar: <span class="numero">0</span></li>
+					<li class="list-group-item">Compañia: <span class="comp">X</span></li>
+					<li class="list-group-item">Email: <span class="mail">Sin Email</span></li>
+				</ul>
+				<p class="titulo"><i class="icon-flechas"></i> Modo de pago</p>
+					<img src="img/webpay.jpg" class="webpay">
+				<button type="submit" class="btn btn-red">CONFIRMA AQUÍ</button>
+				</form>
+				<!-- respuesta envio -->
+				<div class="result">
+					<p class="titulo"><i class="icon-flechas"></i> FELICITACIONES!</p>
+					<p class="titulo">Su recarga se ha realizado con éxito</p>
+					<div class="row">
+						<div class="col-xs-6">
+							URL de comercio:<br>
+							https://www.recargaprepago.cl<br>
+							Tipo de transacción: Venta<br>
+							Orden de compra: 556787<br>
+							Fecha y hora: 2016/09/05 12:01:26<br>
+							Operador: <span class="comp">X</span><br>
+							Producto: <span class="prod">X</span><br>
+							Medio de pago: Webpay<br>		
+						</div>
+						<div class="col-xs-6">
+							Monto de recarga: $ <span class="monto">0</span><br>
+							Suscriptor: 56731926<br>
+							Número de Cuotas: 0<br>
+							Tipo de Coutas: Sin cuotas<br>
+							Últimos 4 digitos de la tarjeta: 7896<br>
+							Código autorización operador: 1567284933<br>
+							Código autorización comercial: 89728<br>					
+						</div>
+						<div class="col-xs-6"><a class="btn btn-blue btn-sm">IMPRIMIR</a></div>
+						<div class="col-xs-6"><a class="btn btn-blue btn-sm">GUARDAR</a></div>
+						<div class="col-xs-12">
+							<small>Si usted ingreso su correo electrónico le enviaremos este documento</small>
+							<button type="button" class="btn btn-blue" data-dismiss="modal">REALIZAR OTRA RECARGA</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 <!-- cabecera-->
-<header class="fondo">
-	<div class="container">
-		<div class="row text-center">
-			<div class="col-md-6 col-md-offset-3 hidden-xs hidden-ms">
-				<ul class="list-inline menu">
+<header class="fondo"><nav class="navbar">
+	<div class="container">		
+			<div class="navbar-header">					
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-gral" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="menu-gral">
+				<ul class="nav navbar-nav menu">
 					<li><a href="index.html">HOME</a></li>
 					<li><a href="http://www.megacompra.cl/quienes_somos.html">QUIENES SOMOS</a></li>
 					<li><a href="ayuda.html">AYUDA</a></li>
 					<li><a href="contacto.html">CONTACTO</a></li>
 				</ul>
 			</div>
-			<div class="col-xs-12 hidden-md hidden-lg">
-				<ul class="list-inline topnav" id="myTopnav">
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="http://www.megacompra.cl/quienes_somos.html">QUIENES SOMOS</a></li>
-					<li><a href="ayuda.html">AYUDA</a></li>
-					<li><a href="contacto.html">CONTACTO</a></li>
-					<li class="icon">
-    					<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
-					</li>
-				</ul>
-			</div>
-		</div>
 	</div>
-</header>
+</nav></header>
 <!--seccion logo recarga-->
 <section>
 	<div class="container">
@@ -97,13 +149,13 @@
 					<div role="tabpanel" class="tab-pane active box-uno" id="movil">
 						<p class="titulo"> <i class="icon-flechas"></i> Elige tu compañia </p>
 						<div class="btn-group hidden-xs hidden-ms" role="group" aria-label="Botonera">
-							<button type="button" class="btn btn-default  logos"><img src="img/logo-Entel.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos"><img src="img/logo-WOM.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos"><img src="img/logo-Virgin.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos"><img src="img/logo-VTR.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos"><img src="img/logo-GTD-movil.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Entel"><img src="img/logo-Entel.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Movistar"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Claro"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="WOM"><img src="img/logo-WOM.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Virgin"><img src="img/logo-Virgin.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="VTR"><img src="img/logo-VTR.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="GTD"><img src="img/logo-GTD-movil.png" class="img-responsive" alt="Responsive image"></button>
 						</div>
 						<ul class="list-inline inputs">
 							<li>
@@ -111,7 +163,7 @@
 									<label for="tel-movil">
 										<p class="titulo"> <i class="icon-flechas"></i> Ingresa tu número</p>
 									</label>
-									<input type="tel" class="form-control" id="tel-movil" placeholder="9 12345678">
+									<input type="tel" maxlength="9" class="form-control req fono" id="tel-movil" placeholder="9 12345678">
 									<span class="mensajeuno">9 digitos</span>
 								</div>
 							</li>
@@ -120,7 +172,7 @@
 									<label for="monto-movil">
 										<p class="titulo"> <i class="icon-flechas"></i> Monto a recargar</p>
 									</label>
-									<input type="number" class="form-control" id="monto-movil" placeholder="Entre $100 y $20.000">
+									<input type="number" min="100" max="20000" class="form-control req monto" id="monto-movil" placeholder="Entre $100 y $20.000">
 									<span class="mensajeuno">Entre $100 y $20.000</span>
 								</div>
 							</li>
@@ -129,11 +181,11 @@
 									<label for="email-movil">
 										<p class="titulo"> <i class="icon-flechas"></i> Correo electronico</p>
 									</label>
-									<input type="email" class="form-control" id="email-movil" placeholder="Opcional">
+									<input type="email" class="form-control correo" id="email-movil" placeholder="Opcional">
 								</div>
 							</li>
 							<li>
-								<button class="btn btn-default recarga" type="submit">Recarga</button>
+								<button class="btn btn-default recarga" type="button" disabled>Recarga</button>
 							</li>
 						</ul>
 					</div>
@@ -141,9 +193,9 @@
 					<div role="tabpanel" class="tab-pane box-uno" id="tv">
 						<p class="titulo"> <i class="icon-flechas"></i> Elige tu compañia </p>
 						<div class="btn-group hidden-xs hidden-ms" role="group" aria-label="Botonera">
-							<button type="button" class="btn btn-default logos"><img src="img/logo-dtv.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Direct TV"><img src="img/logo-dtv.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Movistar"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Claro"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
 						</div>
 						<ul class="list-inline inputs">
 							<li>
@@ -151,7 +203,7 @@
 									<label for="tel-tv">
 										<p class="titulo"> <i class="icon-flechas"></i> Ingresa tu número</p>
 									</label>
-									<input type="email" class="form-control" id="tel-tv" placeholder="9 12345678">
+									<input type="tel" maxlength="9" class="form-control req fono" id="tel-tv" placeholder="9 12345678">
 									<span class="mensajeuno">9 digitos</span>
 								</div>
 							</li>
@@ -160,7 +212,7 @@
 									<label for="monto-tv">
 										<p class="titulo"> <i class="icon-flechas"></i> Monto a recargar</p>
 									</label>
-									<input type="email" class="form-control" id="monto-tv" placeholder="Entre $100 y $20.000">
+									<input type="number" min="100" max="20000" class="form-control req monto" id="monto-tv" placeholder="Entre $100 y $20.000">
 									<span class="mensajeuno">Entre $100 y $20.000</span>
 								</div>
 							</li>
@@ -169,11 +221,11 @@
 									<label for="email-tv">
 										<p class="titulo"> <i class="icon-flechas"></i> Correo electronico</p>
 									</label>
-									<input type="email" class="form-control" id="email-tv" placeholder="Opcional">
+									<input type="email" class="form-control correo" id="email-tv" placeholder="Opcional">
 								</div>
 							</li>
 							<li>
-								<button class="btn btn-default recarga" type="submit">Recarga</button>
+								<button class="btn btn-default recarga" type="button" disabled>Recarga</button>
 							</li>
 						</ul>
 					</div>
@@ -181,10 +233,10 @@
 					<div role="tabpanel" class="tab-pane box-uno" id="fija">
 						<p class="titulo"> <i class="icon-flechas"></i> Elige tu compañia </p>
 						<div class="btn-group hidden-xs hidden-ms" role="group" aria-label="Botonera">
-							<button type="button" class="btn btn-default logos"><img src="img/logo-Entel.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos"><img src="img/logo-tel-sur.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Entel"><img src="img/logo-Entel.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Movistar"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Claro"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Telefonica del Sur"><img src="img/logo-tel-sur.png" class="img-responsive" alt="Responsive image"></button>
 						</div>
 						<ul class="list-inline inputs">
 							<li>
@@ -192,7 +244,7 @@
 									<label for="tel-fija">
 										<p class="titulo"> <i class="icon-flechas"></i> Ingresa tu número</p>
 									</label>
-									<input type="email" class="form-control" id="tel-fija" placeholder="9 12345678">
+									<input type="tel" maxlength="9" class="form-control req fono" id="tel-fija" placeholder="9 12345678">
 									<span class="mensajeuno">9 digitos</span>
 								</div>
 							</li>
@@ -201,7 +253,7 @@
 									<label for="monto-fija">
 										<p class="titulo"> <i class="icon-flechas"></i> Monto a recargar</p>
 									</label>
-									<input type="email" class="form-control" id="monto-fija" placeholder="Entre $100 y $20.000">
+									<input type="number" min="100" max="20000" class="form-control req monto" id="monto-fija" placeholder="Entre $100 y $20.000">
 									<span class="mensajeuno">Entre $100 y $20.000</span>
 								</div>
 							</li>
@@ -210,11 +262,11 @@
 									<label for="email-fija">
 										<p class="titulo"> <i class="icon-flechas"></i> Correo electronico</p>
 									</label>
-									<input type="email" class="form-control" id="email-fija" placeholder="Opcional">
+									<input type="email" class="form-control correo" id="email-fija" placeholder="Opcional">
 								</div>
 							</li>
 							<li>
-								<button class="btn btn-default recarga" type="submit">Recarga</button>
+								<button class="btn btn-default recarga" type="button" disabled>Recarga</button>
 							</li>
 						</ul>
 					</div>
@@ -222,16 +274,16 @@
 					<div role="tabpanel" class="tab-pane box-uno" id="banda">
 						<p class="titulo"> <i class="icon-flechas"></i> Elige tu compañia </p>
 						<div class="btn-group hidden-xs hidden-ms" role="group" aria-label="Botonera">
-							<button type="button" class="btn btn-default logos"><img src="img/logo-Entel.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos"><img src="img/logo-WOM.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos"><img src="img/logo-Virgin.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos"><img src="img/logo-VTR.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos"><img src="img/logo-GTD-movil.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos"><img src="img/logo-gtel.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos"><img src="img/logo-colo-colo-movil.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos"><img src="img/logo-falabella-movil.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Entel"><img src="img/logo-Entel.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Movistar"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Claro"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="WOM"><img src="img/logo-WOM.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Virgin"><img src="img/logo-Virgin.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="VTR"><img src="img/logo-VTR.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="GTD"><img src="img/logo-GTD-movil.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Gtel"><img src="img/logo-gtel.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Colo-Colo"><img src="img/logo-colo-colo-movil.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Falabella"><img src="img/logo-falabella-movil.png" class="img-responsive" alt="Responsive image"></button>
 						</div>
 						<ul class="list-inline inputs">
 							<li>
@@ -239,7 +291,7 @@
 									<label for="tel-banda">
 										<p class="titulo"> <i class="icon-flechas"></i> Ingresa tu número</p>
 									</label>
-									<input type="email" class="form-control" id="tel-banda" placeholder="9 12345678">
+									<input type="tel" maxlength="9" class="form-control req fono" id="tel-banda" placeholder="9 12345678">
 									<span class="mensajeuno">9 digitos</span>
 								</div>
 							</li>
@@ -248,7 +300,7 @@
 									<label for="monto-banda">
 										<p class="titulo"> <i class="icon-flechas"></i> Monto a recargar</p>
 									</label>
-									<input type="email" class="form-control" id="monto-banda" placeholder="Entre $100 y $20.000">
+									<input type="number" min="100" max="20000" class="form-control req monto" id="monto-banda" placeholder="Entre $100 y $20.000">
 									<span class="mensajeuno">Entre $100 y $20.000</span>
 								</div>
 							</li>
@@ -257,11 +309,11 @@
 									<label for="email-banda">
 										<p class="titulo"> <i class="icon-flechas"></i> Correo electronico</p>
 									</label>
-									<input type="email" class="form-control" id="email-banda" placeholder="Opcional">
+									<input type="email" class="form-control correo" id="email-banda" placeholder="Opcional">
 								</div>
 							</li>
 							<li>
-								<button class="btn btn-default recarga" type="submit">Recarga</button>
+								<button class="btn btn-default recarga" type="button" disabled>Recarga</button>
 							</li>
 						</ul>
 					</div>
