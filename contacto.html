@@ -12,18 +12,30 @@
 	<link rel="stylesheet" href="css/fontello.css">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/contacto.css">
+	<script src="js/actions.js"></script>
 </head>
 <body>
 <!-- cabecera-->
 	<header  class="fondo">
 		<div class="container">
 			<div class="row text-center">
-				<div class="col-md-6 col-md-offset-3">
+				<div class="col-md-6 col-md-offset-3 hidden-xs hidden-ms">
 					<ul class="list-inline menu">
 						<li><a href="index.html">HOME</a></li>
 						<li><a href="http://www.megacompra.cl/quienes_somos.html">QUIENES SOMOS</a></li>
 						<li><a href="ayuda.html">AYUDA</a></li>
 						<li><a href="contacto.html">CONTACTO</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 hidden-md hidden-lg">
+					<ul class="list-inline topnav" id="myTopnav">
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="http://www.megacompra.cl/quienes_somos.html">QUIENES SOMOS</a></li>
+						<li><a href="ayuda.html">AYUDA</a></li>
+						<li><a href="contacto.html">CONTACTO</a></li>
+						<li class="icon">
+							<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+						</li>
 					</ul>
 				</div> 
 			</div>
@@ -51,24 +63,24 @@
 						<input class="btn btn-default coment" type="button" value="Comentarios">
 					<h4><i class="icon-flechas"></i>Nombre</h4>
 						<div class="form-group">
-						    <label for="consulta-nombre"></label>
-						    <input type="tel" class="form-control" id="consulta-nombre" placeholder="Obligatorio">
+							<label for="consulta-nombre"></label>
+							<input type="tel" class="form-control" id="consulta-nombre" placeholder="Obligatorio">
 						</div>
 					<h4><i class="icon-flechas"></i> Correo electrónico</h4>
 						<div class="form-group">
-						    <label for="consulta-email"></label>
-						    <input type="tel" class="form-control" id="consulta-email" placeholder="Obligatorio">
+							<label for="consulta-email"></label>
+							<input type="tel" class="form-control" id="consulta-email" placeholder="Obligatorio">
 						</div>
 					<h4><i class="icon-flechas"></i> Teléfono</h4>
 						<div class="form-group">
-						    <label for="consulta-telefono"></label>
-						    <input type="tel" class="form-control" id="consulta-telefono" placeholder="Obligatorio">
+							<label for="consulta-telefono"></label>
+							<input type="tel" class="form-control" id="consulta-telefono" placeholder="Obligatorio">
 						</div>
 					<h4><i class="icon-flechas"></i> Mensaje</h4>
 						<div class="form-group">
-						    <label for="mensaje"></label>
-						    <input type="tel" class="form-control" id="mensaje" placeholder="Obligatorio">
-						    <button type="submit" class="btn btn-primary enviar" id="form-submit">ENVIAR</button>
+							<label for="mensaje"></label>
+							<textarea type="tel" class="form-control" id="mensaje" placeholder="Obligatorio"></textarea>
+							<button type="submit" class="btn btn-primary enviar" id="form-submit">ENVIAR</button>
 						</div>
 				</div>
 				<div class="col-xs-12 col-md-5 bg-der">

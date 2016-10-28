@@ -12,20 +12,32 @@
 	<link rel="stylesheet" href="css/fontello.css">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/ayuda.css">
+	<script src="js/actions.js"></script>
 </head>
 <body>
 <!-- cabecera-->
 	<header  class="fondo">
 		<div class="container">
 			<div class="row text-center">
-				<div class="col-xs-12 col-md-6 col-md-offset-3">
-				<ul class="list-inline menu">
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="http://www.megacompra.cl/quienes_somos.html">QUIENES SOMOS</a></li>
-					<li><a href="ayuda.html">AYUDA</a></li>
-					<li><a href="contacto.html">CONTACTO</a></li>
-				</ul>
-			</div> 
+				<div class="col-md-6 col-md-offset-3 hidden-xs hidden-ms">
+					<ul class="list-inline menu">
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="http://www.megacompra.cl/quienes_somos.html">QUIENES SOMOS</a></li>
+						<li><a href="ayuda.html">AYUDA</a></li>
+						<li><a href="contacto.html">CONTACTO</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 hidden-md hidden-lg">
+					<ul class="list-inline topnav" id="myTopnav">
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="http://www.megacompra.cl/quienes_somos.html">QUIENES SOMOS</a></li>
+						<li><a href="ayuda.html">AYUDA</a></li>
+						<li><a href="contacto.html">CONTACTO</a></li>
+						<li class="icon">
+	    					<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+						</li>
+					</ul>
+				</div> 
 			</div>
 		</div>
 	</header>

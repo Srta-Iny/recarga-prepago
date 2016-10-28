@@ -8,6 +8,7 @@
 	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
 	box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
 	margin-bottom: 2%;
+	height: 760px;
 }
 .bg-der{
 	position: relative;
@@ -19,6 +20,7 @@
 	box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
 	color: #324458;
 	margin-bottom: 2%;
+	height: 760px;
 }
 .bg-izq h4{
 	margin: 3% 0 0 0; 
@@ -42,6 +44,7 @@
 	width: 60%;
 	border-radius: 25px;
 }
+
 .consul, .reclamo, .coment, .enviar, .btn-default:hover,.btn-default.active, .btn-default:active,.btn-default.focus, .btn-default:focus,.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
 	background-color: #324458;
 	color: #fff;
@@ -53,6 +56,6 @@
 .enviar{
 	position: absolute;
 	right: 0;
-	bottom: 0;
+	bottom: 75px;
 	display: inline-block;
 }
