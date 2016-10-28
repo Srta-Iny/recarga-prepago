@@ -3,11 +3,6 @@
 .nav-tabs {
     border-bottom:none;
 }
-.v-align{
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-}
 .box-uno{
 	height: 300px;
 	padding-top: 4%;

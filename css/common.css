@@ -32,6 +32,11 @@ a:focus,button:focus,a:active,button:active,.btn-default:focus{
 	border: none;
     outline: none !important;
 }
+.v-align{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
 /*header*/
 #menu-gral{
 	text-align: center;
