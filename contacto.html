@@ -51,33 +51,38 @@
 	<section>
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-md-7 bg-izq">
-					<h4><i class="icon-flechas"></i> Tipo</h4>
-						<input class="btn btn-default consul" type="button" value="Consulta ">
-						<input class="btn btn-default reclamo" type="button" value="Reclamo">
-						<input class="btn btn-default coment" type="button" value="Comentarios">
+				<div class="col-xs-12 col-md-7 bg-izq"><form>
+					<h4><i class="icon-flechas"></i> Tipo</h4>                    	
+                        <input name="tipo" type="radio" id="tipo-consulta" value="Consulta" class="none" required>
+                        <label for="tipo-consulta" class="label-btn">Consulta</label>
+                        
+                        <input name="tipo" type="radio" id="tipo-reclamo" value="Reclamo" class="none" required>
+                        <label for="tipo-reclamo" class="label-btn">Reclamo</label>
+                        
+                        <input name="tipo" type="radio" id="tipo-comentario" value="Comentarios" class="none" required>
+                        <label for="tipo-comentario" class="label-btn">Comentarios</label>
 					<h4><i class="icon-flechas"></i>Nombre</h4>
 						<div class="form-group">
 							<label for="consulta-nombre"></label>
-							<input type="tel" class="form-control" id="consulta-nombre" placeholder="Obligatorio">
+							<input type="text" class="form-control" id="consulta-nombre" placeholder="Obligatorio" required>
 						</div>
 					<h4><i class="icon-flechas"></i> Correo electrónico</h4>
 						<div class="form-group">
 							<label for="consulta-email"></label>
-							<input type="tel" class="form-control" id="consulta-email" placeholder="Obligatorio">
+							<input type="email" class="form-control" id="consulta-email" placeholder="Obligatorio" required>
 						</div>
 					<h4><i class="icon-flechas"></i> Teléfono</h4>
 						<div class="form-group">
 							<label for="consulta-telefono"></label>
-							<input type="tel" class="form-control" id="consulta-telefono" placeholder="Obligatorio">
+							<input type="tel" class="form-control" id="consulta-telefono" placeholder="Obligatorio" required>
 						</div>
 					<h4><i class="icon-flechas"></i> Mensaje</h4>
 						<div class="form-group">
 							<label for="mensaje"></label>
-							<textarea type="tel" class="form-control" id="mensaje" placeholder="Obligatorio"></textarea>
+							<textarea class="form-control" id="mensaje" placeholder="Obligatorio" required></textarea>
 							<button type="submit" class="btn btn-primary enviar" id="form-submit">ENVIAR</button>
 						</div>
-				</div>
+				</form></div>
 				<div class="col-xs-12 col-md-5 bg-der">
 					<p><strong>En casos que tengas dudas con tus minutos y/o servicios entregados por tu compañía, contáctate con ellos en los siguientes números:</strong></p>
 					<p><strong>Entel: 600 367 7000</strong></p>
