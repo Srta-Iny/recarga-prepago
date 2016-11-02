@@ -24,21 +24,7 @@
 	display: list-item;
 	margin: 5px 0;
 }
-.pregunta{
-	position: relative;
-	display: table-cell;
-	width: 50%;
-}
-.pregunta:hover .respuesta{
-	display: block;
-	font-weight: 700;
-}
-.respuesta{
-	position: absolute;
-	right: 0;
-	display:none;
-	width: 60%;
-}
+
 @media (max-width: 480px){
 	.list-num{
 		width: 100%;
