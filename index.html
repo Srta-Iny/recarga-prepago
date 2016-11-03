@@ -167,13 +167,13 @@
 						<p class="titulo title-comp"> <i class="icon-flechas"></i> Elige tu compañia </p>
 						<div class="select hidden-lg hidden-md hidden-sm"><img class="img hidden" alt="Responsive image"> <span class="comp">Seleccione Compañia</span> <span class="caret"></span></div>
 						<div class="btn-group" role="group" aria-label="Botonera">
-							<button type="button" class="btn btn-default logos" data-comp="Claro"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos" data-comp="Entel"><img src="img/logo-Entel.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos" data-comp="Movistar"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos" data-comp="Telefonica del Sur"><img src="img/logo-tel-sur.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos" data-comp="Virgin"><img src="img/logo-Virgin.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos" data-comp="VTR"><img src="img/logo-VTR.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos" data-comp="WOM"><img src="img/logo-WOM.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Claro" data-min="0" data-max="-1" data-valores="750,1000,2000,2500,3600,5000,10000,15000,25000"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Entel" data-min="500" data-max="20000"><img src="img/logo-Entel.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Movistar" data-min="100" data-max="20000"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Telefonica del Sur" data-min="0" data-max="20000"><img src="img/logo-tel-sur.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Virgin" data-min="500" data-max="45000"><img src="img/logo-Virgin.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="VTR" data-min="100" data-max="20000"><img src="img/logo-VTR.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="WOM" data-min="0" data-max="-1" data-valores="1000,3000,4000,5000,7000,10000,12000,15000,20000,25000,30000"><img src="img/logo-WOM.png" class="img-responsive" alt="Responsive image"></button>
 						</div>
 						<ul class="list-inline inputs">
 							<li>
@@ -190,8 +190,8 @@
 									<label for="monto-movil">
 										<p class="titulo"> <i class="icon-flechas"></i> Monto a recargar</p>
 									</label>
-									<input type="number" min="100" max="20000" class="form-control req monto" id="monto-movil" placeholder="Entre $100 y $20.000">
-									<span class="mensajeuno">Entre $100 y $20.000</span>
+									<input type="number" min="0" max="0" class="form-control req monto" id="monto-movil" placeholder="Ingresa Monto" disabled>
+									<span class="mensajeuno"></span>
 								</div>
 							</li>
 							<li>
@@ -208,13 +208,13 @@
 						</ul>
 					</div>
 	<!-- tab tv-->
-					<div role="tabpanel" class="tab-pane box-uno" id="tv">
+					<div role="tabpanel" class="tab-pane box-uno" id="tv"><form method="post" enctype="application/x-www-form-urlencoded">
 						<p class="titulo title-comp"> <i class="icon-flechas"></i> Elige tu compañia </p>
 						<div class="select hidden-lg hidden-md hidden-sm"><img class="img hidden" alt="Responsive image"> <span class="comp">Seleccione Compañia</span> <span class="caret"></span></div>
 						<div class="btn-group" role="group" aria-label="Botonera">
-							<button type="button" class="btn btn-default logos" data-comp="Direct TV"><img src="img/logo-dtv.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos" data-comp="Movistar"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos" data-comp="Claro"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Direct TV" data-min="500" data-max="35000"><img src="img/logo-dtv.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Movistar" data-min="100" data-max="20000"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Claro" data-min="0" data-max="-1" data-valores="6000,10000,20000,30000"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
 						</div>
 						<ul class="list-inline inputs">
 							<li>
@@ -231,8 +231,8 @@
 									<label for="monto-tv">
 										<p class="titulo"> <i class="icon-flechas"></i> Monto a recargar</p>
 									</label>
-									<input type="number" min="100" max="20000" class="form-control req monto" id="monto-tv" placeholder="Entre $100 y $20.000">
-									<span class="mensajeuno">Entre $100 y $20.000</span>
+									<input type="number" min="0" max="0" class="form-control req monto" id="monto-tv" placeholder="Ingresa Monto" disabled>
+									<span class="mensajeuno"></span>
 								</div>
 							</li>
 							<li>
@@ -247,18 +247,18 @@
 								<button class="btn btn-default recarga" type="button" disabled>Recarga</button>
 							</li>
 						</ul>
-					</div>
+					</form></div>
 	<!--tab red fija-->
-					<div role="tabpanel" class="tab-pane box-uno" id="fija">
+					<div role="tabpanel" class="tab-pane box-uno" id="fija"><form method="post" enctype="application/x-www-form-urlencoded">
 						<p class="titulo title-comp"> <i class="icon-flechas"></i> Elige tu compañia </p>
 						<div class="select hidden-lg hidden-md hidden-sm"><img class="img hidden" alt="Responsive image"> <span class="comp">Seleccione Compañia</span> <span class="caret"></span></div>
 						<div class="btn-group" role="group" aria-label="Botonera">
-							<button type="button" class="btn btn-default logos" data-comp="Claro"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos" data-comp="Entel"><img src="img/logo-Entel.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos" data-comp="Movistar"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos" data-comp="Telefonica del Sur"><img src="img/logo-tel-sur.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos" data-comp="VTR"><img src="img/logo-VTR.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos" data-comp="WOM"><img src="img/logo-WOM.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Claro" data-min="0" data-max="-1" data-valores="750,1000,2000"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Entel" data-min="500" data-max="20000"><img src="img/logo-Entel.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Movistar" data-min="100" data-max="20000"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Telefonica del Sur" data-min="400" data-max="35000"><img src="img/logo-tel-sur.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="VTR" data-min="0" data-max="20000"><img src="img/logo-VTR.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="WOM" data-min="0" data-max="-1" data-valores="1000,3000,4000,5000,7000,10000,12000,15000,20000,25000,30000"><img src="img/logo-WOM.png" class="img-responsive" alt="Responsive image"></button>
 						</div>
 						<ul class="list-inline inputs">
 							<li>
@@ -275,8 +275,8 @@
 									<label for="monto-fija">
 										<p class="titulo"> <i class="icon-flechas"></i> Monto a recargar</p>
 									</label>
-									<input type="number" min="100" max="20000" class="form-control req monto" id="monto-fija" placeholder="Entre $100 y $20.000">
-									<span class="mensajeuno">Entre $100 y $20.000</span>
+									<input type="number" min="0" max="0" class="form-control req monto" id="monto-fija" placeholder="Ingresa Monto" disabled>
+									<span class="mensajeuno"></span>
 								</div>
 							</li>
 							<li>
@@ -291,17 +291,17 @@
 								<button class="btn btn-default recarga" type="button" disabled>Recarga</button>
 							</li>
 						</ul>
-					</div>
+					</form></div>
 	<!--tab banda ancha-->
-					<div role="tabpanel" class="tab-pane box-uno" id="banda">
+					<div role="tabpanel" class="tab-pane box-uno" id="banda"><form method="post" enctype="application/x-www-form-urlencoded">
 						<p class="titulo title-comp"><i class="icon-flechas"></i> Elige tu compañia </p>
 						<div class="select hidden-lg hidden-md hidden-sm"><img class="img hidden" alt="Responsive image"> <span class="comp">Seleccione Compañia</span> <span class="caret"></span></div>
 						<div class="btn-group" role="group" aria-label="Botonera">
-							<button type="button" class="btn btn-default logos" data-comp="Claro"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos" data-comp="Entel"><img src="img/logo-Entel.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos" data-comp="Movistar"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos" data-comp="VTR"><img src="img/logo-VTR.png" class="img-responsive" alt="Responsive image"></button>
-							<button type="button" class="btn btn-default logos" data-comp="WOM"><img src="img/logo-WOM.png" class="img-responsive" alt="Responsive image"></button>					
+							<button type="button" class="btn btn-default logos" data-comp="Claro" data-min="0" data-max="-1" data-valores="750,1000,2000,2500,3600,5000,10000,15000,25000"><img src="img/logo-Claro.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Entel" data-min="500" data-max="20000"><img src="img/logo-Entel.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="Movistar" data-min="100" data-max="20000"><img src="img/logo-Movistar.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="VTR" data-min="100" data-max="20000"><img src="img/logo-VTR.png" class="img-responsive" alt="Responsive image"></button>
+							<button type="button" class="btn btn-default logos" data-comp="WOM" data-min="0" data-max="-1" data-valores="1000,3000,4000,5000,7000,10000,12000,15000,20000,25000,30000"><img src="img/logo-WOM.png" class="img-responsive" alt="Responsive image"></button>					
 						</div>
 						<ul class="list-inline inputs">
 							<li>
@@ -318,8 +318,8 @@
 									<label for="monto-banda">
 										<p class="titulo"> <i class="icon-flechas"></i> Monto a recargar</p>
 									</label>
-									<input type="number" min="100" max="20000" class="form-control req monto" id="monto-banda" placeholder="Entre $100 y $20.000">
-									<span class="mensajeuno">Entre $100 y $20.000</span>
+									<input type="number" min="0" max="0" class="form-control req monto" id="monto-banda" placeholder="Ingresa Monto" disabled>
+									<span class="mensajeuno"></span>                                    
 								</div>
 							</li>
 							<li>
@@ -334,8 +334,8 @@
 								<button class="btn btn-default recarga" type="button" disabled>Recarga</button>
 							</li>
 						</ul>
-					</div>
-				</div>
+					</form></div>
+				</div><!-- fin formulario -->
 			</div>
 		</div>
 	</div>

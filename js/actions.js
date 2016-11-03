@@ -5,19 +5,46 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 $(function() {	
 	//Logos Click Activa/Desactiva
 	$('.logos').click(function(){
-		if($(this).hasClass('active')){			
+		$('.mensajeuno').hide();
+		var bxUno=$(this).parents('.box-uno');
+		if($(this).hasClass('active')){	//si esta activo desactiva boton envio y quita la clase
 			$('.logos.active').removeClass('active');
-			$(this).parents('.box-uno').find('.recarga').prop('disabled', true);
+			bxUno.find('.recarga').prop('disabled', true);
+			bxUno.find('.inputs li:eq(1) .mensajeuno').empty();
+			bxUno.find('.monto').attr('placeholder','');
+			bxUno.find('.monto').attr('min',0);
+			bxUno.find('.monto').attr('max','');
 		}else{
+			var vmin=parseInt($(this).data('min'));
+			var vmax=parseInt($(this).data('max'));
 			$('.logos.active').removeClass('active');
 			$(this).addClass('active');
-			$(this).parents('.box-uno').find('.recarga').prop('disabled', false);
+			//activar boton envio
+			bxUno.find('.recarga').prop('disabled', false);
 			
-			$(this).parents('.box-uno').find('.select .comp').empty().html($(this).data('comp'));
-			$(this).parents('.box-uno').find('.select .img').attr('src',$(this).find('img').attr('src')).removeClass('hidden');
+			bxUno.find('.select .comp').empty().html($(this).data('comp'));
+			bxUno.find('.select .img').attr('src',$(this).find('img').attr('src')).removeClass('hidden');
+			
+			//Monto maximo minimo
+			bxUno.find('.monto').remove();
+			bxUno.find('.inputs li:eq(1) .mensajeuno').empty().html('Seleccione un valor');
+			if(vmax>0){
+				$('<input type="number" min="100" max="20000" class="form-control req monto" id="monto-movil" placeholder="">').insertAfter(bxUno.find('.inputs li:eq(1) .form-group label'));
+				bxUno.find('.monto').attr('min',vmin);
+				bxUno.find('.monto').attr('max',vmax);
+				bxUno.find('.inputs li:eq(1) .mensajeuno').empty().html('Entre $'+miles(vmin)+' y $'+miles(vmax));
+				bxUno.find('.monto').attr('placeholder','Entre $'+miles(vmin)+' y $'+miles(vmax));
+			}else{
+				$('<select class="form-control req monto" id="monto-movil"></select>').insertAfter(bxUno.find('.inputs li:eq(1) .form-group label'));
+				var valores=$(this).data('valores').split(',');
+				$.each(valores,function(index,val){
+					bxUno.find('.inputs li:eq(1) .form-group select').append('<option value="'+val+'">$'+miles(val)+'</option>');
+				});
+			}
+			
 		}
 		if(isMobile){
-			$(this).parents('.box-uno').find('.btn-group-vertical').addClass('hidden');
+			bxUno.find('.btn-group-vertical').addClass('hidden');
 		}
 		//--
 	})
@@ -67,9 +94,11 @@ $(function() {
 });
 function valida( el ){
 	v=el.val();
+	console.log(v);
 	if(!$.trim(v)){
 		return false;
 	}
+	console.log(el);
 	if(el.attr('type')==='tel'){
 		if(!$.isNumeric(v)){
 			return false;
@@ -81,9 +110,16 @@ function valida( el ){
 		if(!$.isNumeric(v)){
 			return false;
 		}
-		if(v<100 || v>20000){
+		var vmin=parseInt(el.data('min'));
+		var vmax=parseInt(el.data('max'));
+		if(v<vmin || v>vmax){
 			return false;
 		}
 	}
 	return true;
+}
+function miles(v){
+	srt=v.toString();	
+	srt=srt.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.");
+	return srt;
 }
