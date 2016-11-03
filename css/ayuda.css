@@ -29,4 +29,8 @@
 	.list-num{
 		width: 100%;
 	}
+	.label-btn {
+		width: 55%;
+		display: block;
+	}
 }
