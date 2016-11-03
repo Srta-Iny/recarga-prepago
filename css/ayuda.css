@@ -11,6 +11,7 @@
 	box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
 }
 .caja-verde a{
+	cursor: pointer;
 	color:#275E7C;
 }
 .caja-verde a:hover{
