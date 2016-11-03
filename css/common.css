@@ -32,6 +32,14 @@ a:focus,button:focus,a:active,button:active,.btn-default:focus{
 	border: none;
     outline: none !important;
 }
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
 .v-align{
 	position: absolute;
 	top: 50%;
