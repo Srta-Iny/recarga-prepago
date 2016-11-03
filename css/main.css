@@ -222,6 +222,19 @@ p.titulo{
 	float: right;
     margin-top: 10px;
 }
+.label-rut{
+	display: block;
+}
+.treintaysiete{
+	width: 27%;
+	margin-right: 0;
+	display: inline-block;
+}
+.resto{
+	display: inline-block;
+	width: 150px;
+	margin-right: 0;
+}
 /*tab resposive*/
 @media (max-width: 1200px){
 	.nav-tabs>li>a {
